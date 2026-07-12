@@ -1,5 +1,6 @@
 import streamlit as st
 import urllib.parse
+import datetime  # 현재 날짜와 시간을 가져오기 위한 모듈 추가
 
 st.set_page_config(page_title="대입 기출문제 학습 도우미", layout="wide")
 
@@ -12,7 +13,12 @@ with col1:
     grades = ["고3", "고2", "고1"]
     grade = st.selectbox("학년", grades, index=0)
 with col2:
-    years = [f"{year}" for year in range(2027, 2003, -1)]
+    # 프로그램이 실행되는 현재 연도 가져오기
+    current_year = datetime.datetime.now().year
+    
+    # 현재 연도부터 2004년까지 역순으로 리스트 생성 (예: 2026, 2025 ... 2004)
+    # 만약 수능 학년도(현재 연도+1) 기준이라면 range(current_year + 1, 2003, -1) 로 수정하시면 됩니다.
+    years = [f"{year}" for year in range(current_year+1, 2003, -1)]
     year = st.selectbox("년도", years)
 with col3:
     months = ["3월", "4월", "5월", "6월", "7월", "9월", "10월", "11월(수능)"]
