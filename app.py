@@ -68,7 +68,7 @@ with btn_col1:
     st.link_button("💡 문제 정답 검색", google_ans_url, use_container_width=True)
     
 with btn_col2:
-    st.link_button("📺 유튜브 동영상 검색", youtube_url, type="primary", use_container_width=True)
+    st.link_button("📺 유튜브 해설 동영상 검색", youtube_url, type="primary", use_container_width=True)
     
 with btn_col3:
     st.link_button("📥 문제 PDF 다운로드 검색", pdf_url, use_container_width=True)
