@@ -17,7 +17,7 @@ with col2:
     current_year = datetime.datetime.now().year
     
     # 현재 연도부터 2004년까지 역순으로 리스트 생성 (예: 2026, 2025 ... 2004)
-    # 만약 수능 학년도(현재 연도+1) 기준이라면 range(current_year + 1, 2003, -1) 로 수정하시면 됩니다.
+    # 만약 수능 학년도(현재 연도+1) 기준이라면 range(current_year + 1, 1992, -1) 로 수정하시면 됩니다.
     years = [f"{year}" for year in range(current_year+1, 2003, -1)]
     year = st.selectbox("년도", years)
 with col3:
