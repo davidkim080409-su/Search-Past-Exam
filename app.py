@@ -73,4 +73,6 @@ with btn_col2:
 with btn_col3:
     st.link_button("📥 문제 PDF 다운로드 검색", pdf_url, use_container_width=True)
 
+st.write("Copyright 2026. 김현수 All rights reserved.")
+
 st.write("")
