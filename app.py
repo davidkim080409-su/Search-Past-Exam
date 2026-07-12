@@ -13,17 +13,17 @@ with col1:
     grade = st.selectbox("학년", grades, index=0)
 with col2:
     years = [f"{year}" for year in range(2027, 2003, -1)]
-    year = st.selectbox("시행 년도", years)
+    year = st.selectbox("년도", years)
 with col3:
     months = ["3월", "4월", "5월", "6월", "7월", "9월", "10월", "11월(수능)"]
-    month = st.selectbox("시행 월", months)
+    month = st.selectbox("월", months)
 
 col4, col5, col6 = st.columns(3)
 with col4:
     subjects = [
         "국어", "국어(언어와 매체)", "국어(화법과 작문)", "영어", 
         "수학", "수학(미적분)", "수학(확률과 통계)", "수학(기하)", 
-        "물리I", "화학I", "생명과학I", "지구과학I", "생활과 윤리", "사회문화", "한국지리", "세계지리", "동아시아사", "세계사", "경제", "정치와 법", "윤리와 사상"
+        "물리I", "화학I", "생명과학I", "지구과학I", "물리II", "화학II", "생명과학II", "지구과학II", "생활과 윤리", "사회문화", "한국지리", "세계지리", "동아시아사", "세계사", "경제", "정치와 법", "윤리와 사상"
     ]
     subject = st.selectbox("과목", subjects)
 with col5:
